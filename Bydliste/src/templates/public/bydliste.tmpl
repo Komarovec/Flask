@@ -1,0 +1,12 @@
+{% from "macros/fields.tmpl" import render_input_field, render_submit %}
+{% extends "shared/layout.tmpl" %}
+
+{% block content %}
+<form method="POST" id='insert-form'>
+{{ form.hidden_tag() }}
+{{ render_input_field(form.street) }}
+{{ render_input_field(form.hNumber) }}
+{{ render_input_field(form.city) }}
+{{ render_input_field(form.postal) }}
+{{ render_submit() }}
+{% endblock %}
