@@ -1,0 +1,13 @@
+{% from "macros/fields.tmpl" import render_input_field, render_submit %}
+{% extends "shared/layout.tmpl" %}
+
+{% block content %}
+  <form method="POST" id='insert-form'>
+    {{ form.hidden_tag() }}
+    {{ render_input_field(form.vyrobek) }}
+    {{ render_input_field(form.ks) }}
+    {{ render_input_field(form.cena) }}
+    {{ render_input_field(form.DPH) }}
+    {{ render_submit() }}
+  </form>
+{% endblock %}

@@ -1,0 +1,18 @@
+{% from "macros/fields.tmpl" import render_input_field, render_submit %}
+{% extends "shared/layout.tmpl" %}
+
+{% block title %}LIST{% endblock %}
+
+{% block content %}
+  <h3>insert</h3>
+  <div class="form-group">Type in the email address you used when signing up and we'll send you a link to reset your password.</div>
+ <table>
+    {% for n in data %}
+        <tr><td>{{ n.jmeno }}</td>
+        <td>{{ n.prijmeni }}</td>
+        <td>{{ n.pohlavi }}</td>
+        <td>{{ n.datum_insertu }}</td></tr>
+    {% endfor %}
+    </table>
+
+{% endblock %}

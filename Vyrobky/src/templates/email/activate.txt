@@ -1,0 +1,8 @@
+Thanks for signing up! Please follow this link to activate your account:
+
+{{ activate_link }}
+
+Have fun, and don't hesitate to contact us with your feedback.
+
+- The flask-skeleton Team
+http://flask-skeleton.herokuapp.com/

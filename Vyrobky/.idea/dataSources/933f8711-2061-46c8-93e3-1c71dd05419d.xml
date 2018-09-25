@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<dataSource name="Sqlite (Xerial) - dev.db">
+  <database-model serializer="dbm" rdbms="SQLITE" format-version="2.6">
+    <schema id="1">
+      <visible>1</visible>
+    </schema>
+    <table id="2" parent="1" name="alembic_version"/>
+    <table id="3" parent="1" name="sqlite_sequence"/>
+    <table id="4" parent="1" name="vyrobky"/>
+    <column id="5" parent="2" name="version_num">
+      <mandatory>1</mandatory>
+      <data-type>VARCHAR(32)(0,-1)|12</data-type>
+    </column>
+    <column id="6" parent="3" name="name">
+      <data-type>(0,-1)|12</data-type>
+    </column>
+    <column id="7" parent="3" name="seq">
+      <data-type>(0,-1)|12</data-type>
+    </column>
+    <column id="8" parent="4" name="Nazev">
+      <data-type>VARCHAR(0,-1)|12</data-type>
+    </column>
+    <column id="9" parent="4" name="kusy">
+      <data-type>INT(0,-1)|4</data-type>
+    </column>
+    <column id="10" parent="4" name="cena">
+      <data-type>INT(0,-1)|4</data-type>
+    </column>
+    <column id="11" parent="4" name="DPH">
+      <data-type>INT(0,-1)|4</data-type>
+    </column>
+    <column id="12" parent="4" name="cenaCelkem">
+      <data-type>FLOAT(0,-1)|6</data-type>
+    </column>
+  </database-model>
+</dataSource>
