@@ -34,7 +34,7 @@ dependencies = [
     "pep8>=1.5.6",
     "pylint>=1.2.1",
     # Prod webserver
-    "gunicorn==0.17.2",
+    "gunicorn==19.5.0",
 ]
 
 setup(
