@@ -11,7 +11,7 @@ except ImportError:
 
 dependencies = [
     # Flask and extensions
-    "flask==0.10.1",
+    "flask==1.0",
     "flask-assets==0.9",
     "flask-bcrypt==0.6.0",
     "flask-login==0.2.11",
